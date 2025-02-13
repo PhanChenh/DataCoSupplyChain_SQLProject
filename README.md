@@ -40,6 +40,10 @@ The objective of this project is to analyze and optimize supply chain performanc
 
 ## 📊 Outcome:
 
+```sql
+select * from DataCoSupplyChainDataset;
+```
+
 1. Order-Related Insights
 - Total sales: 36.45M
 - Total profit: 3.93M
