@@ -1,16 +1,21 @@
 # Project Title: Supply Chain Optimization: From Data to Decisions
 
-## Project Overview:
+## 📌 Project Overview:
 
 Dataset: DataCoSupplyChainDataset from Kaggle (https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis/code)
 
 Efficient supply chain management is critical for business success, ensuring that products are delivered on time while optimizing costs and customer satisfaction.
 
-## Objectives:
+## 📌 Objectives:
 
 The objective of this project is to analyze and optimize supply chain performance by identifying key inefficiencies in order fulfillment, shipping delays, and regional sales distribution. Through data-driven insights, the project aims to improve delivery reliability, enhance customer satisfaction, and maximize profitability by addressing logistical bottlenecks, refining shipping strategies, and aligning inventory management with demand patterns.
 
-## Project Structure:
+## 🔧 Tech Stack:
+- Programming: Python (Pandas, Matplotlib, Seaborn) (for visualization)
+- Data Analysis: SQL (for querying)
+- Tools: Jupyter Notebook
+
+## 🛠 Project Structure:
 1. Order-Related Descriptive
 2.  Shipping & Delivery Performance
 3.  Customer Behavior & Segmentation
@@ -18,9 +23,15 @@ The objective of this project is to analyze and optimize supply chain performanc
 5.  Inventory & Supply Chain Efficiency
 6.  Key Findings & Business Recommendations
 
+## 📌 Key Insights:  
+
+## 🚀 How to Run the Project
+1. Clone the repository:
+2. Install dependencies:
+3. Run the analysis notebooks in Jupyter or execute SQL queries.
 ----
 
-## Outcome:
+## 📊 Outcome:
 
 1. Order-Related Insights
 - Total sales: 36.45M
@@ -44,4 +55,12 @@ Recommendations:
 - Optimize shipping mode selection: Since standard-class is most reliable, encourage its use for non-urgent shipments.
 - Investigate supplier delays: If certain products/categories are consistently late, supply chain issues could be the root cause.
 
+
+## 📬 Contact & Contributions
+
+Feel free to fork, open issues, or suggest improvements!
+
+📧 Email: pearriperri@gmail.com
+
+🔗 [LinkedIn](https://www.linkedin.com/in/phan-chenh-6a7ba127a/) | Portfolio
   
