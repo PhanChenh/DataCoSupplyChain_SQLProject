@@ -4,7 +4,7 @@
 
 Dataset: DataCoSupplyChainDataset from Kaggle (https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis/code)
 
-Noted: Create a temporary table and filter out 2018, ensuring temporal consistency in insights and avoiding bias from incomplete data.
+**Noted:** Create a temporary table and filter out 2018, ensuring temporal consistency in insights and avoiding bias from incomplete data.
 
 Efficient supply chain management is critical for business success, ensuring that products are delivered on time while optimizing costs and customer satisfaction.
 
@@ -26,12 +26,12 @@ The objective of this project is to analyze and optimize supply chain performanc
 6.  Key Findings & Business Recommendations
 
 ## 📌 Key Insights: 
-1. Order Performance: High sales, but mixed order values suggest both high- and low-ticket items. Top regions drive most revenue, while underperforming regions need attention.
-2. Shipping Delays: 54.81% of orders are late. First-class shipping has the most delays; standard-class is the most reliable.
-3. Customer Segments: Consumers drive the most revenue. Opportunities to increase retention and explore B2B or international expansion.
-4. Product Insights: Top products are profitable, but some items (like Sole E35) are loss-making and should be discontinued or repriced.
-5. Inventory & Supply Chain: High-demand products also experience frequent delays. Improve inventory management and analyze supplier lead times.
-6. Regional Performance: No regional delivery trends; focus on improving warehouse efficiency over regional logistics.
+- Order Performance: High sales, but mixed order values suggest both high- and low-ticket items. Top regions drive most revenue, while underperforming regions need attention.
+- Shipping Delays: 54.81% of orders are late. First-class shipping has the most delays; standard-class is the most reliable.
+- Customer Segments: Consumers drive the most revenue. Opportunities to increase retention and explore B2B or international expansion.
+- Product Insights: Top products are profitable, but some items (like Sole E35) are loss-making and should be discontinued or repriced.
+- Inventory & Supply Chain: High-demand products also experience frequent delays. Improve inventory management and analyze supplier lead times.
+- Regional Performance: No regional delivery trends; focus on improving warehouse efficiency over regional logistics.
 
 ## 🚀 How to Run the Project
 1. Clone the repository:
