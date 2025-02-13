@@ -40,33 +40,6 @@ The objective of this project is to analyze and optimize supply chain performanc
 
 ## 📊 Outcome:
 
-```sql
-```sql
--- Analyze Order Quantity vs. Delay
-SELECT 
-    Shipping_Mode,
-    AVG(Order_Item_Quantity) AS Avg_Order_Quantity,
-    SUM(CASE WHEN Late_delivery_risk = 1 THEN 1 ELSE 0 END) AS Late_Orders,
-    COUNT(*) AS Total_Orders,
-    (SUM(CASE WHEN Late_delivery_risk = 1 THEN 1 ELSE 0 END) * 100.0) / COUNT(*) AS Late_Delivery_Percentage
-FROM #DataCoSupplyChain
-WHERE Shipping_Mode IN ('Second Class', 'Same Day', 'First Class', 'Standard Class')
-GROUP BY Shipping_Mode
-ORDER BY Late_Delivery_Percentage DESC;
-
--- late rate by order month and shipping mode
-SELECT 
-    Shipping_Mode, 
-    COUNT(*) AS Total_Orders, 
-    SUM(CASE WHEN Late_delivery_risk = 1 THEN 1 ELSE 0 END) AS Late_Orders,
-    (SUM(CASE WHEN Late_delivery_risk = 1 THEN 1 ELSE 0 END) * 100.0) / COUNT(*) AS Late_Percentage,
-    FORMAT(order_date_DateOrders, 'yyyy-MM') AS Order_Month
-FROM #DataCoSupplyChain
-GROUP BY Shipping_Mode, FORMAT(order_date_DateOrders, 'yyyy-MM')
-ORDER BY Order_Month DESC, Late_Percentage DESC;
-
-```
-
 1. Order-Related Insights
 - Total sales: 36.45M
 - Total profit: 3.93M
