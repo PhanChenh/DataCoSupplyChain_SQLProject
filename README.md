@@ -4,6 +4,8 @@
 
 Dataset: DataCoSupplyChainDataset from Kaggle (https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis/code)
 
+Noted: Create a temporary table and filter out 2018, ensuring temporal consistency in insights and avoiding bias from incomplete data.
+
 Efficient supply chain management is critical for business success, ensuring that products are delivered on time while optimizing costs and customer satisfaction.
 
 ## 📌 Objectives:
@@ -23,7 +25,13 @@ The objective of this project is to analyze and optimize supply chain performanc
 5.  Inventory & Supply Chain Efficiency
 6.  Key Findings & Business Recommendations
 
-## 📌 Key Insights:  
+## 📌 Key Insights: 
+1. Order Performance: High sales, but mixed order values suggest both high- and low-ticket items. Top regions drive most revenue, while underperforming regions need attention.
+2. Shipping Delays: 54.81% of orders are late. First-class shipping has the most delays; standard-class is the most reliable.
+3. Customer Segments: Consumers drive the most revenue. Opportunities to increase retention and explore B2B or international expansion.
+4. Product Insights: Top products are profitable, but some items (like Sole E35) are loss-making and should be discontinued or repriced.
+5. Inventory & Supply Chain: High-demand products also experience frequent delays. Improve inventory management and analyze supplier lead times.
+6. Regional Performance: No regional delivery trends; focus on improving warehouse efficiency over regional logistics.
 
 ## 🚀 How to Run the Project
 1. Clone the repository:
@@ -55,6 +63,40 @@ Recommendations:
 - Optimize shipping mode selection: Since standard-class is most reliable, encourage its use for non-urgent shipments.
 - Investigate supplier delays: If certain products/categories are consistently late, supply chain issues could be the root cause.
 
+3. Customer Behavior & Segmentation
+- Consumer segment is the biggest revenue driver ($18.93M), followed by Corporate ($11.06M) and Home Office ($6.45M).
+- Customers are only from the U.S. and Puerto Rico.
+
+Recommendations:
+- Segmented marketing campaigns: Since consumers drive the most sales, run loyalty programs or personalized promotions for them.
+- Expand internationally: If logistics allow, expanding to neighboring countries could unlock new revenue.
+- B2B sales opportunities: Corporate customers generate high revenue; create bulk-purchase incentives.
+
+4. Product & Category Insights
+- Top 5 products by profit include fitness and sports gear, while the bottom 3 are loss-making (Sole E35, Bushnell Pro X7, Sole E25).
+- All regions have the same top products & categories.
+
+Recommendations:
+- Discontinue or reprice loss-making products (or negotiate better supplier pricing).
+- Boost top-performing products with promotions & bundling.
+- Diversify the product mix if regional demand is identical, as it may indicate lack of localized strategy.
+
+5. Inventory & Supply Chain Efficiency
+- Most-ordered products & categories are also the most frequently delayed.
+- Golf Bags & Carts, Basketball, Fitness Accessories have highest late delivery rates.
+
+Recommendations:
+- Increase inventory buffer for high-demand, frequently late items.
+- Analyze supplier lead times for late products—are suppliers the issue?
+- Warehouse processing improvements to meet demand more efficiently.
+
+6. Regional Performance & Warehouse Bottlenecks
+- No regional trend in delivery delays.
+- Shipping mode affects lateness more than location.
+
+Recommendations:
+- Improve warehouse processing speeds instead of focusing on regional logistics.
+- Analyze seasonal order surges and adjust staffing/resources accordingly.
 
 ## 📬 Contact & Contributions
 
