@@ -34,9 +34,8 @@ The objective of this project is to analyze and optimize supply chain performanc
 - Regional Performance: No regional delivery trends; focus on improving warehouse efficiency over regional logistics.
 
 ## 🚀 How to Run the Project
-1. Clone the repository:
-2. Install dependencies:
-3. Run the analysis notebooks in Jupyter or execute SQL queries.
+1. Clone the repository: https://github.com/PhanChenh/DataCoSupplyChain_SQLProject.git
+2. Run the analysis notebooks in Jupyter or execute SQL queries.
 ----
 
 ## 📊 Outcome:
