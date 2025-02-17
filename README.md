@@ -112,7 +112,7 @@ Customer segment vs. total sales:
 - Corporate: $11,063,676 
 - Home office: $6,456,448
 
-=> onsumer customers contribute the most in sales, followed by corporate and home office 
+=> Consumer customers contribute the most in sales, followed by corporate and home office 
 segments. There is room for targeting and optimizing the experience for each customer type to boost sales further. 
 
 ![Screenshot 2025-02-17 145639](https://github.com/user-attachments/assets/01045d39-5faf-4f4d-8a8f-1d6d1c011f1e)
