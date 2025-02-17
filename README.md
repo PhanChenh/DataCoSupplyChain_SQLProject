@@ -14,104 +14,111 @@
 
 ## Overview:
 
-Dataset: DataCoSupplyChainDataset from Kaggle (https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis/code)
+This analysis focuses on evaluating the performance of the supply chain over the period of 2015-2017, with the main goal of identifying inefficiencies, delays, and areas for optimization. The study examines key metrics such as order performance, shipping and delivery rates, regional sales and profit, product profitability, and warehouse efficiency.
 
-**Noted:** Create a temporary table and filter out 2018, ensuring temporal consistency in insights and avoiding bias from incomplete data.
+The importance of this study lies in its potential to provide actionable insights that can significantly enhance supply chain operations. By understanding delivery delays, profitability trends, and regional performance, the company can improve customer satisfaction, reduce costs, and increase profitability. Ultimately, this analysis aims to provide strategic recommendations that will help optimize the supply chain, streamline operations, and support better decision-making.
 
-Efficient supply chain management is critical for business success, ensuring that products are delivered on time while optimizing costs and customer satisfaction.
+## Dataset
 
-## 📌 Objectives:
+The analysis is based on the DataCoSupplyChainDataset, obtained from Kaggle:
 
-The objective of this project is to analyze and optimize supply chain performance by identifying key inefficiencies in order fulfillment, shipping delays, and regional sales distribution. Through data-driven insights, the project aims to improve delivery reliability, enhance customer satisfaction, and maximize profitability by addressing logistical bottlenecks, refining shipping strategies, and aligning inventory management with demand patterns.
+🔗 DataCo Smart Supply Chain Dataset
+- Source: [Kaggle](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis/code)
+- Time Period Covered: 2015–2017 (2018 data excluded for consistency)
+- Number of Records: 178396 rows
+- Number of Features: 22 
+- Key Variables:
 
-## 🔧 Tech Stack:
-- Programming: Python (Pandas, Matplotlib, Seaborn) (for visualization)
-- Data Analysis: SQL (for querying)
-- Tools: Jupyter Notebook
+  + Sales & Profitability: Sales, Sales_per_customer, Order_Item_Profit_Ratio, Order_Item_Discount, Order_Item_Discount_Rate, Order_Profit_Per_Order
+  + Customer Information: Customer_Id, Customer_Segment, Customer_State
+  + Order Details: Order_Id, Order Date, Order_Region, Order_Item_Quantity
+  + Product Information: Category_Id, ProductN_ame, Product_Price
+  + Shipping & Delivery Performance: Days_for_shipping_real, Days_for_shipment_scheduled, Delivery_Status, Late_delivery_risk, Shipping_Mode
+ 
+## Objective
 
-## 🛠 Project Structure:
-1. Order-Related Descriptive
-2.  Shipping & Delivery Performance
-3.  Customer Behavior & Segmentation
-4.  Product & Category Insights
-5.  Inventory & Supply Chain Efficiency
-6.  Key Findings & Business Recommendations
+The objective of this analysis is to evaluate the supply chain's performance, identify delivery delays, regional and product profitability trends, and uncover warehouse inefficiencies, with the goal of providing actionable recommendations to optimize operations, improve customer satisfaction, and increase profitability.
 
-## 📌 Key Insights: 
-- Order Performance: High sales, but mixed order values suggest both high- and low-ticket items. Top regions drive most revenue, while underperforming regions need attention.
-- Shipping Delays: 54.81% of orders are late. First-class shipping has the most delays; standard-class is the most reliable.
-- Customer Segments: Consumers drive the most revenue. Opportunities to increase retention and explore B2B or international expansion.
-- Product Insights: Top products are profitable, but some items (like Sole E35) are loss-making and should be discontinued or repriced.
-- Inventory & Supply Chain: High-demand products also experience frequent delays. Improve inventory management and analyze supplier lead times.
-- Regional Performance: No regional delivery trends; focus on improving warehouse efficiency over regional logistics.
+## Analysis Approach
+1. Data Preparation
 
-## 🚀 How to Run the Project
-1. Clone the repository: https://github.com/PhanChenh/DataCoSupplyChain_SQLProject.git
-2. Run the analysis notebooks in Jupyter or execute SQL queries.
-----
+The dataset from the DataCoSupplyChainDataset was filtered to exclude data from 2018, as it was found to be inconsistent and would introduce bias into the analysis. This step ensured temporal consistency across the years 2015–2017.
 
-## 📊 Outcome:
+2. Exploratory Data Analysis (EDA)
 
-1. Order-Related Insights
-- Total sales: 36.45M
-- Total profit: 3.93M
-- High total sales and profit, but an average order value of $204.3 suggests a mix of high- and low-ticket items.
-- Top-performing regions (Central America, Western Europe, etc.) drive most orders and profits, while underperforming regions (Central Asia, Canada, Southern Africa, etc.) lag behind.
+Key variables like sales, orders, and delivery rates were analyzed to identify patterns, trends, and areas of concern, such as late deliveries and low-profit products.
 
-Recommendations:
-- Expand operations in high-performing regions with targeted marketing.
-- Investigate barriers in underperforming regions (logistics, demand, pricing issues).
-- Customer acquisition strategy: With 18,529 unique customers, assess ways to improve retention and upselling.
+3. Performance Analysis
 
-2. Shipping & Delivery Performance
-- On-time delivery rate is only 40.88%, 4.31% canceled, and 54.81% of orders are late.
-- First-class shipping has the highest delay (95.3%), followed by second-class (76.6%). Standard-class performs best.
-- Late deliveries happen across all regions, suggesting internal logistics or warehouse issues rather than regional performance issues.
+KPIs such as on-time delivery rates, shipping days, and profitability were examined across shipping modes, regions, and customer segments to uncover inefficiencies and performance gaps.
 
-Recommendations:
-- Revise delivery scheduling algorithms: Adjust estimated delivery times to be more realistic.
-- Improve warehouse efficiency: Since delays aren’t regional, warehouse bottlenecks may be an issue. Look at order processing times.
-- Optimize shipping mode selection: Since standard-class is most reliable, encourage its use for non-urgent shipments.
-- Investigate supplier delays: If certain products/categories are consistently late, supply chain issues could be the root cause.
+4. Root Cause Identification
 
-3. Customer Behavior & Segmentation
-- Consumer segment is the biggest revenue driver ($18.93M), followed by Corporate ($11.06M) and Home Office ($6.45M).
-- Customers are only from the U.S. and Puerto Rico.
+Analysis was conducted to determine the root causes of delays, negative profits, and regional underperformance, focusing on shipping modes and warehouse inefficiencies.
 
-Recommendations:
-- Segmented marketing campaigns: Since consumers drive the most sales, run loyalty programs or personalized promotions for them.
-- Expand internationally: If logistics allow, expanding to neighboring countries could unlock new revenue.
-- B2B sales opportunities: Corporate customers generate high revenue; create bulk-purchase incentives.
+5. Segmentation and Insights
 
-4. Product & Category Insights
-- Top 5 products by profit include fitness and sports gear, while the bottom 3 are loss-making (Sole E35, Bushnell Pro X7, Sole E25).
-- All regions have the same top products & categories.
+Customer segments, product categories, and shipping modes were segmented to identify performance trends and areas for improvement.
 
-Recommendations:
-- Discontinue or reprice loss-making products (or negotiate better supplier pricing).
-- Boost top-performing products with promotions & bundling.
-- Diversify the product mix if regional demand is identical, as it may indicate lack of localized strategy.
+6. Recommendations
 
-5. Inventory & Supply Chain Efficiency
-- Most-ordered products & categories are also the most frequently delayed.
-- Golf Bags & Carts, Basketball, Fitness Accessories have highest late delivery rates.
+Actionable recommendations were made to optimize shipping schedules, improve warehouse operations, and refine customer strategies to boost profitability and customer satisfaction.
 
-Recommendations:
-- Increase inventory buffer for high-demand, frequently late items.
-- Analyze supplier lead times for late products—are suppliers the issue?
-- Warehouse processing improvements to meet demand more efficiently.
+## Key Finding: 
+-	Late Deliveries: Around 55% of orders face delivery delays, with First Class shipping particularly impacted (95.3%). Delays are consistent across regions, indicating internal process issues.
+-	Profitability: Some products (e.g., Sole E25 Elliptical, Bushnell Pro X7) are unprofitable, suggesting a need for re-evaluating pricing and demand strategies.
+-	Regional Insights: High sales and profits are concentrated in regions like Western Europe and Central America, while delays occur universally, indicating systemic inefficiencies.
+-	Shipping Mode Issues: Standard Class has the highest sales but still faces delays (38.1%). First and Second Class suffer from severe delays, pointing to inefficiencies in shipping mode management.
+-	Warehouse Bottlenecks: The delays across all shipping modes suggest that warehouse processing may be a key bottleneck.
 
-6. Regional Performance & Warehouse Bottlenecks
-- No regional trend in delivery delays.
-- Shipping mode affects lateness more than location.
+## How to use
+1. Using SQL Server Management Studio (SSMS) or another SQL Client to execute SQL queries
+2. Run the analysis notebooks in Jupyter.
 
-Recommendations:
-- Improve warehouse processing speeds instead of focusing on regional logistics.
-- Analyze seasonal order surges and adjust staffing/resources accordingly.
+## Technologies Used
+- SQL code: SQL queries were executed to extract insights from the dataset, focusing on sales, profits, orders, shipping delays, and customer behavior. Queries specifically targeted late deliveries, order values, regional performance, and product profitability.
+- Python code: Extracted SQL data was saved as CSV and analyzed using Jupyter Notebook with Python. Key libraries used include Pandas for data manipulation, Seaborn and Matplotlib for data visualization and generating charts to
 
-## 📬 Contact & Contributions
+## Results & Visualizations
 
-Feel free to fork, open issues, or suggest improvements!
+![Screenshot 2025-02-17 144025](https://github.com/user-attachments/assets/b7646344-bbf4-4e83-a152-6aa4ea15f20d)
+Figure 1: Delivery status vs. total orders and percentage result 
+
+- Total late delivery orders: 97,782 
+- Advanced shipping: 41,124 
+- Shipping on time: 31,822 
+- Shipping cancelled:7,668  
+
+=> Delivery Delays: There is a significant issue with on-time deliveries, with a 40.9% on-time delivery rate, 54.8% late deliveries, and 4.3% order cancelled. Late deliveries contribute to customer dissatisfaction and potential revenue loss. 
+
+![Screenshot 2025-02-17 144011](https://github.com/user-attachments/assets/ffacb64e-3658-456c-b7e0-a72189c6bb41)
+Figure 2: Shipping mode vs. total orders, and late delivery percentage 
+
+- Same day: 45.8% 
+- First class: 95.3% 
+- Second class: 76.6% 
+- Standard class: 38.1%
+
+=> A major bottleneck is the high percentage of late deliveries, first Class, which has a high rate of late deliveries, should be re-examined for process inefficiencies. 
+
+![Screenshot 2025-02-17 144825](https://github.com/user-attachments/assets/74be5e82-1faa-4c2f-9a1c-ffb40d2961bd)
+Figure 3: Customer vs. total sales
+
+Customer segment vs. total sales: 
+- Consumer: $18,932,959 
+- Corporate: $11,063,676 
+- Home office: $6,456,448
+
+=> onsumer customers contribute the most in sales, followed by corporate and home office 
+segments. There is room for targeting and optimizing the experience for each customer type to boost sales further. 
+
+![Screenshot 2025-02-17 145639](https://github.com/user-attachments/assets/01045d39-5faf-4f4d-8a8f-1d6d1c011f1e)
+Figure 4: Top 10 category vs. late delivery 
+
+![Screenshot 2025-02-17 145652](https://github.com/user-attachments/assets/49bf066c-865e-486d-89d4-629d9860ff04)
+Figure 5: Top 10 product vs. late delivery 
+
+## Contact
 
 📧 Email: pearriperri@gmail.com
 
