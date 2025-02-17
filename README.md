@@ -82,6 +82,7 @@ Actionable recommendations were made to optimize shipping schedules, improve war
 ## Results & Visualizations
 
 ![Screenshot 2025-02-17 144025](https://github.com/user-attachments/assets/b7646344-bbf4-4e83-a152-6aa4ea15f20d)
+
 Figure 1: Delivery status vs. total orders and percentage result 
 
 - Total late delivery orders: 97,782 
@@ -92,6 +93,7 @@ Figure 1: Delivery status vs. total orders and percentage result
 => Delivery Delays: There is a significant issue with on-time deliveries, with a 40.9% on-time delivery rate, 54.8% late deliveries, and 4.3% order cancelled. Late deliveries contribute to customer dissatisfaction and potential revenue loss. 
 
 ![Screenshot 2025-02-17 144011](https://github.com/user-attachments/assets/ffacb64e-3658-456c-b7e0-a72189c6bb41)
+
 Figure 2: Shipping mode vs. total orders, and late delivery percentage 
 
 - Same day: 45.8% 
@@ -102,6 +104,7 @@ Figure 2: Shipping mode vs. total orders, and late delivery percentage
 => A major bottleneck is the high percentage of late deliveries, first Class, which has a high rate of late deliveries, should be re-examined for process inefficiencies. 
 
 ![Screenshot 2025-02-17 144825](https://github.com/user-attachments/assets/74be5e82-1faa-4c2f-9a1c-ffb40d2961bd)
+
 Figure 3: Customer vs. total sales
 
 Customer segment vs. total sales: 
@@ -113,9 +116,11 @@ Customer segment vs. total sales:
 segments. There is room for targeting and optimizing the experience for each customer type to boost sales further. 
 
 ![Screenshot 2025-02-17 145639](https://github.com/user-attachments/assets/01045d39-5faf-4f4d-8a8f-1d6d1c011f1e)
+
 Figure 4: Top 10 category vs. late delivery 
 
 ![Screenshot 2025-02-17 145652](https://github.com/user-attachments/assets/49bf066c-865e-486d-89d4-629d9860ff04)
+
 Figure 5: Top 10 product vs. late delivery 
 
 ## Contact
