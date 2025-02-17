@@ -1,6 +1,18 @@
-# Project Title: Supply Chain Optimization: From Data to Decisions
+# Project Title: Supply Chain Optimization – Tackling Delivery Delays and Profitability Challenges (2015-2017) 
 
-## 📌 Project Overview:
+## Table of Contents
+- [Overview](#overview)
+- [Dataset](#dataset)
+- [Objective](#objective)
+- [Analysis Approach](#analysis-approach)
+- [Key Findings](#key-findings)
+- [How to Use](#how-to-use)
+- [Technologies Used](#technologies-used)
+- [Results & Visualizations](#results--visualizations)
+- [Contributing](#contributing)
+- [Contact](#contact)
+
+## Overview:
 
 Dataset: DataCoSupplyChainDataset from Kaggle (https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis/code)
 
