@@ -61,7 +61,7 @@ WITH TotalOrders AS (
 SELECT 
     Delivery_Status, 
     COUNT(Order_Id) AS Total_Orders,
-    (COUNT(Order_Id) * 100.0 / (SELECT Total_Orders FROM TotalOrders)) AS Percentage
+    CAST(ROUND((COUNT(Order_Id) * 100.0 / (SELECT Total_Orders FROM TotalOrders)), 2) AS DECIMAL(10,2)) AS Percentage
 FROM #DataCoSupplyChain
 GROUP BY Delivery_Status
 ORDER BY Total_Orders DESC;
@@ -87,9 +87,9 @@ ORDER BY Avg_Scheduled_Shipping_Days;
 SELECT 
     Shipping_Mode, 
     COUNT(*) AS Total_Orders,
-    AVG(CAST(Days_for_shipping_real AS FLOAT)) AS Avg_Shipping_Days,
+    ROUND(AVG(CAST(Days_for_shipping_real AS FLOAT)), 2) AS Avg_Shipping_Days,
     COUNT(CASE WHEN Late_delivery_risk = 1 THEN 1 END) AS Late_Deliveries,
-    (COUNT(CASE WHEN Late_delivery_risk = 1 THEN 1 END) * 100.0 / COUNT(*)) AS Late_Delivery_Percentage
+    ROUND((COUNT(CASE WHEN Late_delivery_risk = 1 THEN 1 END) * 100.0 / CAST(COUNT(*) AS FLOAT)), 2) AS Late_Delivery_Percentage
 FROM #DataCoSupplyChain
 GROUP BY Shipping_Mode
 ORDER BY Avg_Shipping_Days;
@@ -192,7 +192,7 @@ ORDER BY Total_Orders DESC;
 -- 3. Customer Behavior & Segmentation
 
 -- Sales by Customer Segment
-SELECT Customer_Segment, SUM(Sales) AS Total_Sales 
+SELECT Customer_Segment, ROUND(SUM(Sales),2) AS Total_Sales 
 FROM #DataCoSupplyChain
 GROUP BY Customer_Segment
 ORDER BY Total_Sales DESC;
