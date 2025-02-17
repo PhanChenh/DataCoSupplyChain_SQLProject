@@ -81,7 +81,8 @@ Actionable recommendations were made to optimize shipping schedules, improve war
 
 ## Results & Visualizations
 
-![Screenshot 2025-02-17 144025](https://github.com/user-attachments/assets/b7646344-bbf4-4e83-a152-6aa4ea15f20d)
+![Screenshot 2025-02-17 203508](https://github.com/user-attachments/assets/85219b16-5852-42c9-bea4-e0b481ea21c3)
+
 
 Figure 1: Delivery status vs. total orders and percentage result 
 
@@ -92,7 +93,8 @@ Figure 1: Delivery status vs. total orders and percentage result
 
 => Delivery Delays: There is a significant issue with on-time deliveries, with a 40.9% on-time delivery rate, 54.8% late deliveries, and 4.3% order cancelled. Late deliveries contribute to customer dissatisfaction and potential revenue loss. 
 
-![Screenshot 2025-02-17 144011](https://github.com/user-attachments/assets/ffacb64e-3658-456c-b7e0-a72189c6bb41)
+![Screenshot 2025-02-17 203844](https://github.com/user-attachments/assets/94853754-a76c-4c4d-8b18-816fc6c97f60)
+
 
 Figure 2: Shipping mode vs. total orders, and late delivery percentage 
 
@@ -117,7 +119,7 @@ Figure 5: Late rate per month in 2017
 
 => Late shipment trends vary by shipping mode but show no clear pattern from 2015 to 2017. Standard Class had the lowest late percentage (38%), while First Class was the highest (95%). Second Class averaged 75%, and Same Day fluctuated between 30% and 60%.
 
-![Screenshot 2025-02-17 144825](https://github.com/user-attachments/assets/74be5e82-1faa-4c2f-9a1c-ffb40d2961bd)
+![Screenshot 2025-02-17 204157](https://github.com/user-attachments/assets/a565e110-197c-4865-9573-9b14daffac90)
 
 Figure 6: Customer vs. total sales
 
