@@ -160,6 +160,7 @@ SELECT
 FROM #DataCoSupplyChain
 GROUP BY Shipping_Mode, FORMAT(order_date_DateOrders, 'yyyy-MM')
 ORDER BY Order_Month DESC, Late_Percentage DESC;
+-- -> save as a file for visualize later 
 
 -- late percentage of specific product
 SELECT 
