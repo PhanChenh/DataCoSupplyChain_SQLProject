@@ -9,7 +9,7 @@
 - [How to Use](#how-to-use)
 - [Technologies Used](#technologies-used)
 - [Results & Visualizations](#results--visualizations)
-- [Contributing](#contributing)
+- [Recommendation](#Recommendation)
 - [Contact](#contact)
 
 ## Overview:
@@ -77,7 +77,7 @@ Actionable recommendations were made to optimize shipping schedules, improve war
 
 ## Technologies Used
 - SQL code: SQL queries were executed to extract insights from the dataset, focusing on sales, profits, orders, shipping delays, and customer behavior. Queries specifically targeted late deliveries, order values, regional performance, and product profitability.
-- Python code: Extracted SQL data was saved as CSV and analyzed using Jupyter Notebook with Python. Key libraries used include Pandas for data manipulation, Seaborn and Matplotlib for data visualization and generating charts to
+- Python code: Extracted SQL data was saved as CSV and analyzed using Jupyter Notebook with Python. Key libraries used include Pandas for data manipulation, Seaborn and Matplotlib for data visualization.
 
 ## Results & Visualizations
 
@@ -117,11 +117,38 @@ segments. There is room for targeting and optimizing the experience for each cus
 
 ![Screenshot 2025-02-17 145639](https://github.com/user-attachments/assets/01045d39-5faf-4f4d-8a8f-1d6d1c011f1e)
 
-Figure 4: Top 10 category vs. late delivery 
+Figure 4: Top 10 category vs. late delivery  
 
 ![Screenshot 2025-02-17 145652](https://github.com/user-attachments/assets/49bf066c-865e-486d-89d4-629d9860ff04)
 
 Figure 5: Top 10 product vs. late delivery 
+
+- Top Categories & Late Deliveries: Categories like Golf Bags & Carts, Basketball, and 
+Fitness Accessories have high delivery late rates and also the highest order volumes, 
+suggesting issues with inventory management or fulfillment processes in these categories.
+
+- Product Profitability: Some products, like Sole E25 Elliptical and Bushnell Pro X7, have a negative profit, indicating issues either with pricing, demand, or high shipping costs. 
+Analysing pricing strategy or discontinuing unprofitable products could improve margins.
+
+- High-Volume Categories: Cleats, Men's Footwear, and Women's Apparel have the highest 
+order volumes but are also frequently late. It may indicate inefficiencies in inventory 
+management or supply chain processes for these categories
+- Low-Volume Products: Products with fewer orders tend to have the highest delivery late 
+percentages, possibly due to low inventory or poor demand forecasting. 
+
+![Screenshot 2025-02-17 201320](https://github.com/user-attachments/assets/53961959-68f4-4792-89c5-f94ac98f8347)
+
+Figure 6: Regional vs. late delivery
+
+The data suggests that late deliveries are a consistent problem across all regions, so the issue likely lies in internal processes rather than regional-specific issues. This may indicate a universal need for operational improvements rather than regional adjustments. 
+
+## Recommendation
+
+- Improve Shipping Scheduling: Align shipping policies with realistic delivery expectations and improve the scheduling for First Class and Second Class to reduce delays.
+- Optimize Warehouse Operations: Investigate and streamline warehouse workflows to minimize delays and improve inventory management. 
+- Reevaluate Product Profitability: Review low-profit products and adjust pricing or marketing strategies for better profitability. 
+- Enhance Demand Forecasting: Improve forecasting to ensure timely availability of highdemand products, especially in categories like Cleats and Men’s Footwear. 
+- Tailor Customer Strategies: Focus on customer segments like consumer, corporate, and home office to increase sales and retention, particularly in U.S. and Puerto Rico. 
 
 ## Contact
 
