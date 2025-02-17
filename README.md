@@ -103,9 +103,23 @@ Figure 2: Shipping mode vs. total orders, and late delivery percentage
 
 => A major bottleneck is the high percentage of late deliveries, first Class, which has a high rate of late deliveries, should be re-examined for process inefficiencies. 
 
+![image](https://github.com/user-attachments/assets/831c3bbb-804a-40a5-b9f1-626f88dd9b07)
+
+Figure 3: Late rate per month in 2015
+
+![image](https://github.com/user-attachments/assets/c5e9ab7c-6d0d-4d51-a575-2de00b239362)
+
+Figure 4: Late rate per month in 2016
+
+![image](https://github.com/user-attachments/assets/5caf155d-be57-4270-83bd-0bffb0da854f)
+
+Figure 5: Late rate per month in 2017
+
+=> Late shipment trends vary by shipping mode but show no clear pattern from 2015 to 2017. Standard Class had the lowest late percentage (38%), while First Class was the highest (95%). Second Class averaged 75%, and Same Day fluctuated between 30% and 60%.
+
 ![Screenshot 2025-02-17 144825](https://github.com/user-attachments/assets/74be5e82-1faa-4c2f-9a1c-ffb40d2961bd)
 
-Figure 3: Customer vs. total sales
+Figure 6: Customer vs. total sales
 
 Customer segment vs. total sales: 
 - Consumer: $18,932,959 
@@ -117,11 +131,11 @@ segments. There is room for targeting and optimizing the experience for each cus
 
 ![Screenshot 2025-02-17 145639](https://github.com/user-attachments/assets/01045d39-5faf-4f4d-8a8f-1d6d1c011f1e)
 
-Figure 4: Top 10 category vs. late delivery  
+Figure 7: Top 10 category vs. late delivery  
 
 ![Screenshot 2025-02-17 145652](https://github.com/user-attachments/assets/49bf066c-865e-486d-89d4-629d9860ff04)
 
-Figure 5: Top 10 product vs. late delivery 
+Figure 8: Top 10 product vs. late delivery 
 
 - Top Categories & Late Deliveries: Categories like Golf Bags & Carts, Basketball, and 
 Fitness Accessories have high delivery late rates and also the highest order volumes, 
@@ -138,7 +152,7 @@ percentages, possibly due to low inventory or poor demand forecasting.
 
 ![Screenshot 2025-02-17 201320](https://github.com/user-attachments/assets/53961959-68f4-4792-89c5-f94ac98f8347)
 
-Figure 6: Regional vs. late delivery
+Figure 9: Regional vs. late delivery
 
 The data suggests that late deliveries are a consistent problem across all regions, so the issue likely lies in internal processes rather than regional-specific issues. This may indicate a universal need for operational improvements rather than regional adjustments. 
 
