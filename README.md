@@ -72,7 +72,7 @@ Actionable recommendations were made to optimize shipping schedules, improve war
 -	Warehouse Bottlenecks: The delays across all shipping modes suggest that warehouse processing may be a key bottleneck.
 
 ## How to use
-1. Using SQL Server Management Studio (SSMS) or another SQL Client to execute SQL queries
+1. Using SQL Server Management Studio (SSMS) to execute SQL queries
 2. Run the analysis notebooks in Jupyter.
 
 ## Technologies Used
