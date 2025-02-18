@@ -6,7 +6,7 @@
 - [Objective](#objective)
 - [Analysis Approach](#analysis-approach)
 - [Key Findings](#key-findings)
-- [How to Use](#how-to-use)
+- [How to run code](#how-to-run-code)
 - [Technologies Used](#technologies-used)
 - [Results & Visualizations](#results--visualizations)
 - [Recommendation](#Recommendation)
@@ -71,7 +71,7 @@ Actionable recommendations were made to optimize shipping schedules, improve war
 -	Shipping Mode Issues: Standard Class has the highest sales but still faces delays (38.1%). First and Second Class suffer from severe delays, pointing to inefficiencies in shipping mode management.
 -	Warehouse Bottlenecks: The delays across all shipping modes suggest that warehouse processing may be a key bottleneck.
 
-## How to use
+## How to run code
 1. Using SQL Server Management Studio (SSMS) to execute SQL queries
 2. Run the analysis notebooks in Jupyter.
 
