@@ -168,7 +168,7 @@ The data suggests that late deliveries are a consistent problem across all regio
 
 ## Contact
 
-📧 Email: pearriperri@gmail.com
+📧 Email: phanchenh99@gmail.com
 
 🔗 [LinkedIn](https://www.linkedin.com/in/phan-chenh-6a7ba127a/) | Portfolio
   
