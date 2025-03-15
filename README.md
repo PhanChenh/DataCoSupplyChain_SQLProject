@@ -164,7 +164,6 @@ The data suggests that late deliveries are a consistent problem across all regio
 - Optimize Warehouse Operations: Investigate and streamline warehouse workflows to minimize delays and improve inventory management.  
 - Enhance Demand Forecasting: Improve forecasting to ensure timely availability of highdemand products, especially in categories like Cleats and Men’s Footwear. 
 - Tailor Customer Strategies: Focus on customer segments like consumer, corporate, and home office to increase sales and retention, particularly in U.S. and Puerto Rico.
-- 4. Enhance Demand Forecasting
 
 ## Contact
 
